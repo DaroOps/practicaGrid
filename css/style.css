@@ -1,7 +1,145 @@
 @import url(variables.css);
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    padding: 3%;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    gap: .7rem;
+    grid-template-areas:
+    	"img1  img1  img1  img1  img2  img2  img2  img3  img3  img4  img4  img4  img4 "
+    	"img1  img1  img1  img1  img2  img2  img2  img3  img3  img4  img4  img4  img4 "
+    	"img1  img1  img1  img1  img7  img7  img7  img7  img7  img4  img4  img4  img4 "
+    	"img5  img5  img6  img6  img7  img7  img7  img7  img7  img4  img4  img4  img4 "
+    	"img5 img5 img6 img6 img7  img7  img7  img7  img7  img8 img8 img9 img9"
+    	"img10 img10 img10 img10 img7 img7 img7 img7 img7 img11 img11 img11 img11"
+    	"img12 img12 img12 img13 img14 img15 img15 img15 img16 img17 img17 img17 img17"
+        "img12 img12 img12 img13 img14 img15 img15 img15 img16 img17 img17 img17 img17"
+        ;
+}
+
+.item{
+    border-radius: 1rem;
+    background-color: var(--color-primary);
+    justify-content: center;
+}
+
+.item img {
+    object-fit: contain;
+}
+
+.item:nth-child(1){
+    display: flex;
+    grid-area: img1;
+}
+
+.item:nth-child(2) {
+    display: flex;
+    grid-area: img2;
+}
+
+.item:nth-child(3) {
+    display: flex;
+    grid-area: img3;
+}
+
+.item:nth-child(4) {
+    display: flex;
+    grid-area: img4;
+}
+
+.item:nth-child(5) {
+    display: flex;
+    grid-area: img5;
+}
+
+.item:nth-child(6) {
+    display: flex;
+    grid-area: img6;
+}
+
+.item:nth-child(7) {
+    display: flex;
+    grid-area: img7;
+}
+
+.item:nth-child(8) {
+    display: flex;
+    grid-area: img8;
+}
+
+.item:nth-child(9) {
+    display: flex;
+    grid-area: img9;
+}
+
+.item:nth-child(10) {
+    display: flex;
+    grid-area: img10;
+}
+
+.item:nth-child(11) {
+    display: flex;
+    grid-area: img11;
+}
+
+.item:nth-child(12) {
+    display: flex;
+    grid-area: img12;
+}
+
+.item:nth-child(13) {
+    display: flex;
+    grid-area: img13;
+}
+
+.item:nth-child(14) {
+    display: flex;
+    grid-area: img14;
+}
+
+.item:nth-child(15) {
+    display: flex;
+    grid-area: img15;
+}
+
+.item:nth-child(16) {
+    display: flex;
+    grid-area: img16;
+}
+
+.item:nth-child(17) {
+    display: flex;
+    grid-area: img17;
+}
+
+@media (width < 1200px){
+    body{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6"
+            "img7"
+            "img8"
+            "img9"
+            "img10"
+            "img11"
+            "img12"
+            "img13"
+            "img14"
+            "img15"
+            "img16"
+            "img17" 
+        ;
+    }
 }
